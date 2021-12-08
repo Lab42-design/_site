@@ -1,0 +1,18 @@
+/**
+ *
+ * util functions
+ *
+ */
+// usage: throttle(SomeFunctionName, 100)
+function throttle(callback, limit) {
+    let waiting = false; // Initially, we're not waiting
+    return function () {
+        if (!waiting) { // If we're not waiting
+            callback.apply(this, arguments); // Execute users function
+            waiting = true; // Prevent future invocations
+            setTimeout(function () {
+                waiting = false; // And allow future invocations
+            }, limit);
+        }
+    };
+}
