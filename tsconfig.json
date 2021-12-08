@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "sourceMap": false,
+    "declaration": false,
+    "importHelpers": false,
+    "target": "es2018",
+    "module": "es6",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "files": [
+    "src/fetchPartial.ts",
+    "src/promiseDom.ts",
+    "src/events.ts",
+    "src/router.ts",
+    "src/index.ts",
+    "src/utils.ts"
+  ],
+}
