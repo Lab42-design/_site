@@ -14,7 +14,7 @@ function __start() {
 }
 // router
 const router = new Router({
-    type: "history",
+    type: "hash",
     routes: {
         "/": "home",
         "/about": "about",
